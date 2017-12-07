@@ -1,0 +1,60 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	min-height: 25rem;
+	color: white;
+	background-color: green;
+}
+/*上半部分*/
+.top_content{
+	width: 100%;
+	height: 30%;
+	position: relative;
+	background-color: blue;
+}
+.top_content .logo{
+	width: 100%;
+	height: 2rem;
+	position: absolute;
+	top: 2rem;
+}
+.top_content .logo p{
+	text-align: center;
+}
+.top_content .welcome{
+	width: 100%;
+	height: 2rem;
+	position: absolute;
+	bottom: 1rem;
+}
+.top_content .welcome p{
+    text-align: center;
+    font-size: 0.7rem;
+    width: 11rem;
+    margin: 0 auto;
+    line-height: 0.8rem;
+    font-weight: 600;
+}
+/*下半部分*/
+.bottom_content{
+	width: 100%;
+	height: 70%;
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+	padding-top: 0;
+}
+.bottom_content ul{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+
+
+
+
