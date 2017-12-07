@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>step4</title>
+	<meta http-equiv="Cache-Control" content="no-cache" />    
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />    
+	<meta name="apple-mobile-web-app-capable" content="yes" />   
+	<meta content="black" name=" apple-mobile-web-app-status-bar-style"   />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="email=no" name="format-detection" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="applicable-device" content="mobile">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/step4/index.css">
+	<script type="text/javascript" src="js/rem.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="top_content">
+			<div class="logo"><p><img src="img/step4/logo.png"></p></div>
+		</div>
+		<div class="bottom_content">
+			<p>Time Remaining</p>
+			<p>
+				<span id="hour">00</span>:
+				<span id="minute">00</span>:
+				<span id="second">00</span>
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+
+	/**
+	*hour:小时
+	*minute:分钟
+	*second：秒
+	*/
+	function countDown(hour,minute,second) {
+		document.getElementById("hour").innerHTML = (hour<10) ? "0"+hour:hour;
+		document.getElementById("minute").innerHTML = (minute<10) ? "0"+minute:minute;
+		document.getElementById("second").innerHTML = (second<10) ? "0"+second:second;
+
+		var hour1 = parseInt(hour);
+		var minute1 = parseInt(minute);
+		var second1 = parseInt(second);
+		var allSecond = hour1*60*60 + minute1*60 + second1;
+
+		var time = window.setInterval(function(){
+			if (allSecond == 0) {
+				window.clearTimeout(time);
+				alert("bingo！")
+			} else {
+				allSecond = allSecond - 1;
+				var hour2 = Math.floor(allSecond/60/60%24);
+				var minute2 = Math.floor(allSecond/60%60);
+				var second2 = Math.floor(allSecond%60);
+
+				document.getElementById("hour").innerHTML = (hour2<10) ? "0"+hour2:hour2;
+				document.getElementById("minute").innerHTML = (minute2<10) ? "0"+minute2:minute2;
+				document.getElementById("second").innerHTML = (second2<10) ? "0"+second2:second2;
+
+			}
+		}, 1000);
+	}
+	countDown(0,1,59);
+</script>
+</html>

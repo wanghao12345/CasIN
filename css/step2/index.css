@@ -7,14 +7,14 @@ html,body{
 	height: 100%;
 	min-height: 25rem;
 	color: white;
-	background-color: green;
+	background-image: url(../../img/step2/back2.png);
+    background-size: 100% 100%;
 }
 /*上半部分*/
 .top_content{
 	width: 100%;
 	height: 30%;
 	position: relative;
-	background-color: blue;
 }
 .top_content .logo{
 	width: 100%;
@@ -48,12 +48,90 @@ html,body{
 	padding: 10px;
 	padding-top: 0;
 }
-.bottom_content ul{
+.bottom_content .ul_content{
 	width: 100%;
 	height: 100%;
+	overflow-y: auto;
+}
+.bottom_content .ul_content ul{
+	width: 100%;
+	min-height: 100%;
 	background-color: white;
 }
+.bottom_content .ul_content ul li{
+	width: 100%;
+    height: 4.3rem;
+    overflow: hidden;
+    border-bottom: 1px solid #d3d3d3;
+    box-sizing: border-box;
+	padding-top: 0.5rem;
+}
+.bottom_content .ul_content ul li .left_img{
+	width: 3.5rem;
+	height: 100%;
+	float: left;
+}
+.bottom_content .ul_content ul li .right_content{
+	width: 11.5rem;
+	height: 100%;
+	float: left;
+    
 
+}
+.bottom_content .ul_content ul li .right_content p:nth-child(1){
+	overflow: hidden;
+	height: 0.9rem;
+	line-height: 0.9rem;
+}
+.bottom_content .ul_content ul li .right_content p:nth-child(1) strong{
+    display: inline;
+    color: #3f63a2;
+    float: left;
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+.bottom_content .ul_content ul li .right_content p:nth-child(1) span{
+	width: 2.2rem;
+    height: 0.9rem;
+    font-size: 0.4rem;
+    color: #525252;
+    float: right;
+    border-radius: 2px;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    line-height: 0.9rem;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    margin-right: 5px;
+}
+.bottom_content .ul_content ul li .right_content p:nth-child(2){
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.5rem;
+	color: #5f5f5f;
+	overflow: hidden; /*自动隐藏文字*/
+	text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+	white-space: nowrap;/*强制不换行*/
+}
+.bottom_content .ul_content ul li .right_content p:nth-child(3){
+	width: 100%;
+	height: 1.5rem;
+	font-size: 0.5rem;
+	color: #bdbdbd;
+ 	word-wrap: break-word; 
+	word-break: normal; 
+	line-height: 0.8rem;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+
+
+}
 
 
 
