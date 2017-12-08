@@ -70,6 +70,10 @@ html,body{
 	width: 3.5rem;
 	height: 100%;
 	float: left;
+	text-align: center;
+}
+.bottom_content .ul_content ul li .left_img img{
+	width: 2.5rem;
 }
 .bottom_content .ul_content ul li .right_content{
 	width: 11.5rem;
@@ -105,6 +109,11 @@ html,body{
     background-color: #f9f9f9;
     border: 1px solid #e6e6e6;
     margin-right: 5px;
+}
+.bottom_content .ul_content ul li .right_content p:nth-child(1) span img{
+    width: 0.5rem;
+    margin-right: 0.1rem;
+    margin-top: 0.1rem;
 }
 .bottom_content .ul_content ul li .right_content p:nth-child(2){
 	width: 100%;
