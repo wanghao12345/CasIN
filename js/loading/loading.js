@@ -21,10 +21,10 @@ function addLoading(){
     //添加loadingDOM
     $("body").append('<div id="foo" style="width:100%; height:100%; position:fixed;top:0px;left:0px;background: rgba(0, 0, 0, 0.6);"></div>');
     var opts = {
-         lines: 13, // loading小块的数量
-         length: 7, // 小块的长度
-         width: 4, // 小块的宽度
-         radius: 10, // 整个圆形的半径
+         lines: 9, // loading小块的数量
+         length: 0, // 小块的长度
+         width: 10, // 小块的宽度
+         radius: 15, // 整个圆形的半径
          corners: 1, // 小块的圆角，越大则越圆
          rotate: 0, // loading动画的旋转度数，貌似没什么实际作用
          color: '#fff', // 颜色
