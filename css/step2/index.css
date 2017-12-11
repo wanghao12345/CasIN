@@ -110,11 +110,18 @@ html,body{
     background-color: #f9f9f9;
     border: 1px solid #e6e6e6;
     margin-right: 5px;
+    position: relative;
 }
 .bottom_content .ul_content ul li .right_content p:nth-child(1) span img{
     width: 0.5rem;
-    margin-right: 0.1rem;
-    margin-top: 0.1rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.2rem;
+}
+.bottom_content .ul_content ul li .right_content p:nth-child(1) span i{
+    position: absolute;
+    left: 0.9rem;
+    top: 0.08rem;
 }
 .bottom_content .ul_content ul li .right_content p:nth-child(2){
 	width: 100%;
